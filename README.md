@@ -1,12 +1,126 @@
-# React + Vite
+# Advanced React Todo Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, feature-rich Todo application built with React, Redux, and Material-UI. This application includes user authentication, task management with priority levels, weather integration for outdoor tasks, and a responsive design.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🔐 User Authentication
+  - Simple username-based login
+  - Protected routes
+  - Persistent authentication state
 
-## Expanding the ESLint configuration
+- 📝 Task Management
+  - Add, edit, and delete tasks
+  - Mark tasks as complete/incomplete
+  - Set task priority levels (Low, Medium, High)
+  - Categorize tasks (Indoor/Outdoor)
+  - Local storage persistence
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🌤️ Weather Integration
+  - Real-time weather information for outdoor tasks
+  - Temperature and weather condition display
+  - City-based weather lookup
+
+- 🎨 Modern UI/UX
+  - Clean and intuitive interface
+  - Responsive design for all devices
+  - Material-UI components
+  - Smooth animations and transitions
+  - Dark/Light theme support
+
+## Prerequisites
+
+- Node.js (v14 or higher)
+- npm (v6 or higher)
+- OpenWeatherMap API key
+
+## Setup Instructions
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/todo-app.git
+   cd todo-app
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Create a `.env` file in the root directory and add your OpenWeatherMap API key:
+   ```
+   VITE_WEATHER_API_KEY=your_api_key_here
+   ```
+   You can get an API key by signing up at [OpenWeatherMap](https://openweathermap.org/api)
+
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+5. Open your browser and navigate to `http://localhost:5173`
+
+## Project Structure
+
+```
+todo-app/
+├── src/
+│   ├── components/
+│   │   ├── Login.jsx
+│   │   ├── TaskInput.jsx
+│   │   ├── TaskList.jsx
+│   │   └── TodoList.jsx
+│   ├── store/
+│   │   ├── index.js
+│   │   └── slices/
+│   │       ├── authSlice.js
+│   │       └── todoSlice.js
+│   ├── services/
+│   │   └── weatherService.js
+│   ├── App.jsx
+│   └── main.jsx
+├── .env
+├── package.json
+└── README.md
+```
+
+## Technologies Used
+
+- React 18
+- Redux Toolkit
+- Material-UI
+- React Router
+- Vite
+- OpenWeatherMap API
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Screenshots
+
+### Login Page
+![Login Page](screenshots/login.png)
+
+### Todo List
+![Todo List](screenshots/todo-list.png)
+
+### Task Input
+![Task Input](screenshots/task-input.png)
+
+### Weather Integration
+![Weather Integration](screenshots/weather.png)
+
+## Acknowledgments
+
+- [Material-UI](https://mui.com/) for the beautiful components
+- [OpenWeatherMap](https://openweathermap.org/) for the weather API
+- [Redux Toolkit](https://redux-toolkit.js.org/) for state management
