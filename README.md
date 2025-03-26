@@ -117,7 +117,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ![Task Input]()
 
 ### Weather Integration
-![Weather Integration]()
+![Weather Integration](./screenshots/weather.png)
 
 ## Acknowledgments
 
