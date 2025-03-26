@@ -38,7 +38,7 @@ A modern, feature-rich Todo application built with React, Redux, and Material-UI
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/todo-app.git
+   git clone https://github.com/anuj-pal27/todo-app.git
    cd todo-app
    ```
 
@@ -108,16 +108,16 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## Screenshots
 
 ### Login Page
-![Login Page](screenshots/login.png)
+![Login Page]()
 
 ### Todo List
-![Todo List](screenshots/todo-list.png)
+![Todo List]()
 
 ### Task Input
-![Task Input](screenshots/task-input.png)
+![Task Input]()
 
 ### Weather Integration
-![Weather Integration](screenshots/weather.png)
+![Weather Integration]()
 
 ## Acknowledgments
 
